@@ -8,26 +8,35 @@ pritected function __construct($name, $lastname, $surname, $age)
     $this->fullName = $surname;
     $this->fullName = $age;
 }
-    public function getName()
-    {
+    public function getName(){
         return $this->Name;
     }
 
-    public function getLastname()
-    {
+    public function getLastname(){
         return $this->Lastname;
     }
 
-    public function setName($name)
-    {
+    public function getSurname(){
+    return $this->Surname;
+    }
+
+    public function setName($name){
         if (gettype($name) === 'string') {
             $this->fullName = $name;
         }
     }
 
-    public function setLastname(array $lastname)
-    {
+    public function setLastname(array $lastname){
+        if (gettype($lastname) === 'string') {
         $this->Lastname = $lastname;
+        }
+    }
+
+    public function setSurname($surname){
+        if (gettype($surname) === 'string'){
+            $this->Surname=$surname;
+        }
+
     }
 
 }
