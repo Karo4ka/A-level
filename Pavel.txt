@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Hello Karina
+=======
+Privet test 2
+>>>>>>> 0041864429f4048b93526f414837fd62f20625ab
