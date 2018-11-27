@@ -20,6 +20,10 @@ public function __construct($name, $lastname, $surname, $age)
     return $this->Surname;
     }
 
+    public function getAge(){
+        return $this->Age;
+    }
+
     public function setName($name){
         if (gettype($name) === 'string') {
             $this->fullName = $name;
@@ -39,7 +43,14 @@ public function __construct($name, $lastname, $surname, $age)
 
     }
 
-
 }
 $student = new Students();
 $student->Name = 'Karina';
+
+    public function setAge(array $age)
+    {
+        $this->accessRights = $age;
+    }
+
+}
+
