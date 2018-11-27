@@ -1,7 +1,7 @@
 <?php
 class Students {
-    private $Alex,$Pavel, $Karina;
-pritected function __construct($name, $lastname, $surname, $age)
+    public  $name, $surname, $lastname, $age;
+public function __construct($name, $lastname, $surname, $age)
 {
     $this->fullName = $name;
     $this->fullName = $lastname;
@@ -43,9 +43,14 @@ pritected function __construct($name, $lastname, $surname, $age)
 
     }
 
+}
+$student = new Students();
+$student->Name = 'Karina';
+
     public function setAge(array $age)
     {
         $this->accessRights = $age;
     }
 
 }
+
