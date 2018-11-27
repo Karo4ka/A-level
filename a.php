@@ -20,6 +20,10 @@ pritected function __construct($name, $lastname, $surname, $age)
     return $this->Surname;
     }
 
+    public function getAge(){
+        return $this->Age;
+    }
+
     public function setName($name){
         if (gettype($name) === 'string') {
             $this->fullName = $name;
@@ -37,6 +41,11 @@ pritected function __construct($name, $lastname, $surname, $age)
             $this->Surname=$surname;
         }
 
+    }
+
+    public function setAge(array $age)
+    {
+        $this->accessRights = $age;
     }
 
 }
